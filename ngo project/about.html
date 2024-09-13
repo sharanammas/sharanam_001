@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/ngo project/css/style.css">
+</head>
+<body>
+    <div class="fullContainer banner" id="homeSection">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="images/ngo_logo_2.png" alt="NGO logo" id="lele" />
+                </div>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="programs.html">Programs</a>
+                        </li>
+                        <li>
+                            <a href="#gallerySection">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#joinSection">Join Us</a>
+                        </li>
+                        <li>
+                            <select name="Features" id="featuresDropdown" onchange="navigateToFeature()">
+                                <option value="Features">Features </option>
+                                <option value="humanrights.html">Human Rights NGOs</option>
+                                <option value="environmental.html">Environmental NGOs</option>
+                                <option value="health.html">Health NGOs</option>
+                                <option value="education.html">Educational NGOs</option>
+                                <option value="childprotection.html">Child Protection NGOs</option>
+                                <option value="animalhelp.html">Animal Rights NGOs</option>
+                                <option value="womensrights.html">Women's Rights NGOs</option>
+                                <option value="laborrights.html">Labor Rights NGOs</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+            <h1>Together We Can <span>Save Lives</span></h1>
+            <p>Your generous donation can make a world of difference. By contributing, you help us provide essential
+                services, support vulnerable communities, and drive meaningful change. Every Penny you give empowers us
+                to continue our vital work, ensuring a brighter and more equitable future for those in need. </p>
+            <button>Start With A Little</button>
+
+        </div>
+    </div>
+    <section class="fullContainer" id="aboutSection">
+        <div class="container">
+            <h2 class="sectionTitle">
+                About Us
+            </h2>
+            <p>We are Non-Governmental Organizations (NGOs) providing facilities to the unpriveledged people in our society. We provide various facilities such as food, clothes, shelter and education. We also ensure their safety. Helping such society would lead to the betterment of our nation, we are working on it. </p>
+            <div class="cards">
+                <div class="donationBox">
+                    <div class="title">Give Donation</div>
+                    <p>Your donation can make a big difference. Every bit helps!</p>
+                    <button>Donate Now</button>
+                        
+                </div>
+
+                <div class="volunteerBox">
+                    <div class="title">Become a volunteer</div>
+                    <p>Join us in making a difference—volunteer with our NGO and help create a better tomorrow!</p>
+                    <button>Become Now</button>
+                </div>
+
+                <div class="scholarshipBox">
+                    <div class="title">Give Scholarship</div>
+                    <p>Help those in need of education by prodiving a scholarship for the betterment of their future</p>
+                    <button>Give immediately</button>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+</body>
+<script>
+    function navigateToFeature() {
+        var dropdown = document.getElementById("featuresDropdown");
+        var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+        if (selectedValue && selectedValue !== "Features") {
+            window.location.href = selectedValue;
+        }
+    }
+</script>
+</html>
